@@ -13,6 +13,7 @@ namespace HotelAppLibrary.Models
         public string RoomNumber { get; set; }
         public int RoomTypeId { get; set; }
 
-        public int test { get; set;}
+
+        public int test2; 
     }
 }
