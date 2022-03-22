@@ -18,10 +18,10 @@ namespace HotelAppLibrary.Databases
             _config = config;
         }
 
-        public List<T> LoadData<T, U>(string sqlStatement,
-                                      U parameters,
-                                      string connectionStringName,
-                                      bool isStoredProcedure = false)
+        public List<T> LoadData<T, U>(string sqlStatement, //Stored Procedure eller en query
+                                      U parameters, //variabler för sp/query
+                                      string connectionStringName, //Mot vilken DB
+                                      bool isStoredProcedure = false) 
         {
             string connectionString = _config.GetConnectionString(connectionStringName);
             CommandType commandType = CommandType.Text;
